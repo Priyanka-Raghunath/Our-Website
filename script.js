@@ -6,9 +6,12 @@ const modalText = document.getElementById('storyModalText');
 const modalDate = document.getElementById('storyModalDate');
 const modalClose = document.querySelector('.story-modal-close');
 
-const startDate = new Date('2026-09-07');
-const today = new Date();
-const diffInDays = Math.floor((today - startDate) / (1000 * 60 * 60 * 24));
+const DAY_MS = 1000 * 60 * 60 * 24;
+const toIstDate = (date) => new Date(date.toLocaleString('en-US', { timeZone: 'Asia/Kolkata' }));
+const startDate = new Date('2026-09-07T00:00:00+05:30');
+const todayInIst = toIstDate(new Date());
+const startDateInIst = toIstDate(startDate);
+const diffInDays = Math.floor((todayInIst - startDateInIst) / DAY_MS) + 1;
 const countEl = document.getElementById('days-count');
 
 if (countEl) {
