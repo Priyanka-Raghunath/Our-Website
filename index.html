@@ -19,19 +19,10 @@
   <body>
     <div class="page-shell">
       <div class="days-counter" aria-live="polite">
-        <span class="days-label">Together for</span>
-        <strong id="days-count">26</strong>
-        <span class="days-label">days</span>
+        <span>Together for</span>
+        <strong id="days-count">25</strong>
+        <span>days</span>
       </div>
-
-      <header class="top-placeholder">
-        <div class="container top-inner">
-          <p class="mini-tag">My favorite person</p>
-          <div class="placeholder-box" aria-label="Space for future content">
-            <span>Space for your future content</span>
-          </div>
-        </div>
-      </header>
 
       <main class="container main-content">
         <section class="intro">
@@ -71,7 +62,7 @@
                 <div class="note">
                   <span>Letter 2</span>
                   <h2>Favourite</h2>
-                  <p>My favourite thing is to see you smile, even for a second. You know what else is my favourite? .... YOU &lt;3</p>
+                  <p>My favourite thing is to see you smile, even for a second. You know what else is my favourite? .... YOUUU</p>
                 </div>
               </div>
             </div>
@@ -87,7 +78,7 @@
               <div class="envelope-face envelope-back">
                 <div class="note">
                   <span>Letter 3</span>
-                  <h2>Forever</h2>
+                  <h2>Go-to person</h2>
                   <p>You are my best friend, boy friend, partner in crisis, companion, support, my love and everything!!</p>
                 </div>
               </div>
@@ -95,24 +86,71 @@
           </button>
         </section>
 
-        <section class="love-letter-section">
-          <div class="section-header">
-            <p class="kicker">My love letter</p>
-            <h2>For you, always</h2>
+        <section class="home-story" id="milestones" aria-label="Our milestones">
+          <div class="home-story-header">
+            <p>Our little story</p>
+            <h2>Milestones</h2>
           </div>
-          <div class="letter-box">
-            <p>
-              Write your love letter here... this space is waiting for all the beautiful words you want to say to him.
-            </p>
+
+          <div class="heart-journey">
+            <div class="story-list" aria-label="Relationship milestones">
+              <button class="story-item" type="button" data-title="Our First Conversation" data-message="I remember clearly how you tried to strike conversation this day. We had our cute little introductions. Coincidently our seats were beside each other on the Alcazar show. I really wished aunties weren't sitting beside me that day, hehe.">
+                <div class="story-date">13th Aug</div>
+                <div class="story-dot" aria-hidden="true"></div>
+                <div class="story-card">
+                  <h2>Our First Conversation</h2>
+                </div>
+              </button>
+
+              <button class="story-item" type="button" data-title="Our First Kiss" data-message="Totally loved the conversation that lead to it. Never imagined something like this could happen in such a way!! That kiss, that day felt very different. I never told you but, I had already started to feel something for you. I had already grown closer to you, I already got attached my love!">
+                <div class="story-date">14th Aug</div>
+                <div class="story-dot" aria-hidden="true"></div>
+                <div class="story-card">
+                  <h2>Our First Kiss</h2>
+                </div>
+              </button>
+
+              <button class="story-item" type="button" data-title="Our First “I Like You”" data-message="Imagine the amount of butterflies I got when you said that on bed while cuddling. That tight hug, that feeling of belongingness... omg... I barely managed to act normal.. How could I? After all, it was you">
+                <div class="story-date">16th Aug</div>
+                <div class="story-dot" aria-hidden="true"></div>
+                <div class="story-card">
+                  <h2>Our First “I Like You”</h2>
+                </div>
+              </button>
+
+              <button class="story-item" type="button" data-title="Our First “I Love You”" data-message="Who said 'I love you' first?
+
+Maau
+Kanna">
+                <div class="story-date">6th Sep</div>
+                <div class="story-dot" aria-hidden="true"></div>
+                <div class="story-card">
+                  <h2>Our First “I Love You”</h2>
+                </div>
+              </button>
+
+              <button class="story-item" type="button" data-title="Our Relationship Day" data-message="After really putting thoughts into it, we finally made it!! Thanks for being the way you are kanna!! You make me feel so comfortable and safe!! None like you...&#10;I'm super proud of you.. have huge respect for you.. I'm so happy you are doing so well and will always wish you keep doing better and better. You have no idea how much I love you (I love you more, hehe). - Your fav Maau">
+                <div class="story-date">7th Sep</div>
+                <div class="story-dot" aria-hidden="true"></div>
+                <div class="story-card">
+                  <h2>Our Relationship Day</h2>
+                </div>
+              </button>
+            </div>
           </div>
         </section>
+
       </main>
     </div>
 
-    <nav class="bottom-nav" aria-label="Main navigation">
-      <a href="index.html" class="nav-link active">Home</a>
-      <a href="songs.html" class="nav-link">Songs</a>
-    </nav>
+    <div class="story-modal" id="storyModal" aria-hidden="true">
+      <div class="story-modal-card" role="dialog" aria-modal="true" aria-labelledby="storyModalTitle">
+        <button class="story-modal-close" type="button" aria-label="Close popup">&times;</button>
+        <p class="story-modal-date" id="storyModalDate">Memory</p>
+        <h3 id="storyModalTitle">Our memory</h3>
+        <p class="story-modal-text" id="storyModalText"></p>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>

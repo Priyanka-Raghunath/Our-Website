@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Story</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell story-page">
+      <main class="container main-content">
+        <header class="story-header">
+          <p>Our little story</p>
+          <h1>Our milestones</h1>
+        </header>
+
+        <div class="film-roll">
+          <section class="story-list" aria-label="Our relationship milestones">
+            <button
+              class="story-item"
+              type="button"
+              data-title="Our First Conversation"
+              data-message="I remember clearly how you tried to strike conversation this day. We had our cute little introductions. Coincidently our seats were beside each other on the Alcazar show. I really wished aunties weren't sitting beside me that day, hehe."
+            >
+              <div class="story-date">13th Aug</div>
+              <div class="story-dot" aria-hidden="true"></div>
+              <div class="story-card">
+                <h2>Our First Conversation</h2>
+              </div>
+            </button>
+
+            <button
+              class="story-item"
+              type="button"
+              data-title="Our First Kiss"
+              data-message="Totally loved the conversation that lead to it. Never imagined something like this could happen in such a way!! That kiss, that day felt very different. I never told you but, I had already started to feel something for you. I had already grown closer to you, I already got attached my love!"
+            >
+              <div class="story-date">14th Aug</div>
+              <div class="story-dot" aria-hidden="true"></div>
+              <div class="story-card">
+                <h2>Our First Kiss</h2>
+              </div>
+            </button>
+
+            <button
+              class="story-item"
+              type="button"
+              data-title="Our First “I Like You”"
+              data-message="Imagine the amount of butterflies I got when you said that on bed while cuddling. That tight hug, that feeling of belongingness... omg... I barely managed to act normal.. How could I? After all, it was you"
+            >
+              <div class="story-date">16th Aug</div>
+              <div class="story-dot" aria-hidden="true"></div>
+              <div class="story-card">
+                <h2>Our First “I Like You”</h2>
+              </div>
+            </button>
+
+            <button
+              class="story-item"
+              type="button"
+              data-title="Our First “I Love You”"
+              data-message="Who said 'I love you' first?\n\nMaau\nKanna"
+            >
+              <div class="story-date">6th Sep</div>
+              <div class="story-dot" aria-hidden="true"></div>
+              <div class="story-card">
+                <h2>Our First “I Love You”</h2>
+              </div>
+            </button>
+
+            <button
+              class="story-item"
+              type="button"
+              data-title="Our Relationship Day"
+              data-message="After really putting thoughts into it, we finally made it!! Thanks for being the way you are kanna!! You make me feel so comfortable and safe!! None like you...&#10;I'm super proud of you.. have huge respect for you.. I'm so happy you are doing so well and will always wish you keep doing better and better. You have no idea how much I love you (I love you more, hehe). - Your fav Maau"
+            >
+              <div class="story-date">7th Sep</div>
+              <div class="story-dot" aria-hidden="true"></div>
+              <div class="story-card">
+                <h2>Our Relationship Day</h2>
+              </div>
+            </button>
+          </section>
+        </div>
+
+        <div class="story-cta-wrap">
+          <a href="index.html" class="story-back">Back home</a>
+        </div>
+      </main>
+    </div>
+
+    <div class="story-modal" id="storyModal" aria-hidden="true">
+      <div class="story-modal-card" role="dialog" aria-modal="true" aria-labelledby="storyModalTitle">
+        <button class="story-modal-close" type="button" aria-label="Close popup">&times;</button>
+        <p class="story-modal-date" id="storyModalDate">Memory</p>
+        <h3 id="storyModalTitle">Our memory</h3>
+        <p class="story-modal-text" id="storyModalText"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
